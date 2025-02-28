@@ -1,0 +1,91 @@
+
+
+/* AWAL STYLE NAVBAR */
+.navbar {
+    background-color: #0567a8;
+    color: white;
+    padding: 10px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.search-button {
+    padding: 8px 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: white;
+    color: rgb(5, 103, 168);
+}
+/* AKHIR STYLE NAVBAR*/
+
+/* AWAL STYLE APA YANG DIDAPAT*/
+
+
+.expect-container {
+    margin-top: 250px;
+    text-align: center;
+    padding: 20px;
+    float: center;
+    
+}
+
+.expect-header {
+    font-size: 2.5em; 
+    margin-bottom: 20px;
+    color: white;
+}
+
+.expect-items {
+    display: flex; 
+    justify-content: space-around; 
+}
+
+.item {
+    background-color: #0056b3; 
+    color: white;
+    padding: 15px;
+    border-radius: 10px; 
+    width: 30%; 
+}
+
+.item h2 {
+    font-size: 1.5em; 
+}
+
+.item p {
+    font-size: 1em; 
+}
+/* AKHIR STYLE APA YANG DIDAPAT*/

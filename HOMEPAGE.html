@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylehomepage.css">
+    <link rel="stylesheet" href="stylelandingpage.css">
+    <title>MancingKuy.com</title>
+</head>
+<body>
+    <!--AWAL CODE NAVBAR-->
+    <nav class="navbar">
+        <div class="container">
+            <a href="LANDING PAGE.html" class="navbar-brand">MancingKuy</a>
+            <form class="search-form" role="search" action="https://www.google.com/search" method="get">
+                <input class="search-input" type="search" placeholder="Search" aria-label="Search" name="q">
+                <button class="search-button" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    
+    <script>
+        document.getElementById('mancingSearchForm').addEventListener('submit', function(event) {
+            var keyword = document.getElementById('mancingSearchInput').value.toLowerCase(); // Convert to lowercase
+        
+            if (keyword.includes('mancing')) {
+                // If the keyword contains "mancing", continue with the search
+                this.action = "https://www.google.com/search?q=" + encodeURIComponent(keyword);
+            } else {
+                // If the keyword does not contain "mancing", prevent submission
+                event.preventDefault(); // Prevent the form from being submitted
+                alert('Pencarian harus mengandung kata "mancing".');
+            }
+        });
+        </script>
+
+    <!--AKHIR CODE NAVBAR-->
+
+    <!--AWAL CODE APA YANG DIDAPAT-->
+        <div class="expect-container">
+            <h1 class="expect-header">APA YANG ANDA DAPATKAN</h1>
+            <h2 class="expect-header">SETELAH MENGUNJUNGI WEBSITE KAMI?</h2>
+            <div class="expect-items">
+                <div class="item">
+                    <h2>METODE MANCING YANG BENAR</h2>
+                    <p>Metode memancing yang benar melibatkan kombinasi antara pemilihan peralatan yang tepat</p>
+                    
+                </div>
+                <div class="item">
+                    <h2>TANGKAPAN YANG LEBIH BESAR</h2>
+                    <p>bukan sekadar tentang menangkap ikan berukuran jumbo, tetapi juga tentang meningkatkan pengalaman memancing secara keseluruhan</p>
+                    
+                </div>
+                <div class="item">
+                    <h2>PEMAHAMAN TERKAIT JENIS IKAN</h2>
+                    <p>Pemahaman terkait jenis ikan adalah kunci sukses dalam memancing. Ini bukan hanya tentang mengetahui nama-nama ikan, tetapi juga memahami karakteristik, perilaku, dan habitat mereka.</p>
+                    
+                </div>
+            </div>
+        </div>
+    <!--AKHIR CODE APA YANG DIDAPAT-->
+</body>
+</html>
