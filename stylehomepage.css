@@ -98,3 +98,37 @@
     font-size: 1em; 
 }
 /* AKHIR STYLE APA YANG DIDAPAT*/
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Mengubah arah flex container menjadi kolom */
+        align-items: stretch; /* Memperluas item untuk mengisi lebar container */
+    }
+
+    .search-form {
+        width: 100%; /* Memperluas formulir pencarian */
+        margin-top: 10px; /* Tambahkan margin atas untuk spasi */
+    }
+
+    .search-input {
+        width: calc(100% - 110px); /* Memperluas input pencarian */
+    }
+
+    .expect-items {
+        flex-direction: column; /* Mengubah arah flex item menjadi kolom */
+        align-items: center; /* Menengahkan item */
+    }
+
+    .item {
+        width: 90%; /* Memperluas item untuk mengisi lebar container */
+    }
+
+    .expect-header {
+      font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-input {
+        width: calc(100% - 90px);
+    }
+}
