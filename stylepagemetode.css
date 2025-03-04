@@ -26,3 +26,18 @@ p{
     z-index: 2;
     position: relative;
 }
+@media (max-width: 768px) {
+    body {
+        background-position: center; /* Pusatkan gambar latar belakang */
+    }
+
+    p {
+        font-size: 0.9em; /* Kurangi ukuran font untuk layar kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    p {
+        font-size: 0.85em; /* Kurangi ukuran font lebih lanjut untuk layar sangat kecil */
+    }
+}

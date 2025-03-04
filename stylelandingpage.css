@@ -51,3 +51,37 @@ p {
     background-color: #0567a8; 
 }
 /* AKHIR STYLE TEXT TENGAH*/
+
+@media (max-width: 768px) {
+    body {
+        background-position: center; /* Pusatkan gambar latar belakang */
+    }
+
+    .overlay {
+        padding: 15px; /* Kurangi padding untuk layar kecil */
+        width: 95%; /* Menyesuaikan lebar overlay, lebih lebar di mobile */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Kurangi ukuran font h1 untuk layar kecil */
+    }
+
+    p {
+        font-size: 1.2rem; /* Kurangi ukuran font p untuk layar kecil */
+    }
+
+    .btn {
+        padding: 8px 16px; /* Kurangi padding button untuk layar kecil */
+        font-size: 0.9rem; /* Kurangi ukuran font button untuk layar kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem; /* Kurangi ukuran font h1 lebih lanjut untuk layar sangat kecil */
+    }
+
+    p {
+        font-size: 1rem; /* Kurangi ukuran font p lebih lanjut untuk layar sangat kecil */
+    }
+}
