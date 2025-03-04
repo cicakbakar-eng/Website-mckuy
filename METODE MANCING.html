@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MancingKuy.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylepagemetode.css">
+    <link rel="stylesheet" href="stylehomepage.css">
+</head>
+<body>
+
+    <!--AWAL CODE NAVBAR-->
+    <nav class="navbar">
+        <div class="container">
+            <a href="HOMEPAGE.html" class="navbar-brand">MancingKuy</a>
+            <form class="search-form" role="search" action="https://www.google.com/search" method="get">
+                <input class="search-input" type="search" placeholder="Cari Metode Mancing" aria-label="Search" name="q">
+                <button class="search-button" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    </div>
+    
+    <script>
+        document.getElementById('mancingSearchForm').addEventListener('submit', function(event) {
+            var keyword = document.getElementById('mancingSearchInput').value.toLowerCase(); // Convert to lowercase
+        
+            if (keyword.includes('mancing')) {
+                // If the keyword contains "mancing", continue with the search
+                this.action = "https://www.google.com/search?q=" + encodeURIComponent(keyword);
+            } else {
+                // If the keyword does not contain "mancing", prevent submission
+                event.preventDefault(); 
+                alert('Pencarian harus mengandung kata "mancing".');
+            }
+        });
+    </script>
+        <!--AWAL CODE APA YANG DIDAPAT-->
+        <div class="expect-container">
+            <h1 class="expect-header">APA SAJA METODE DALAM MEMANCING???</h1>
+            <h2 class="expect-header">PELAJARI HAL TERSEBUT DIBAWAH INI</h2>
+            <p>Dalam memancing terdapat banyak cara atau metode dalam memancing, namun pada kali ini kami akan mengenalkan 3 Metode dalam Memancing</p>
+            <div class="expect-items">
+                <div class="item">
+                    <h2>Memancing dengan Pancingan (Rod and Reel Fishing)</h2>
+                    <p>Metode ini adalah cara memancing yang paling umum, menggunakan pancing dengan reel (gulungan pancing) untuk menarik ikan. Pancingan ini biasanya dilengkapi dengan kail dan umpan yang terpasang di ujungnya. Pemancing melemparkan pancingan ke air, menunggu ikan menggigit, lalu menariknya ke daratan.</p>
+                    
+                </div>
+                <div class="item">
+                    <h2>Memancing dengan Joran Trolling (Trolling Fishing)</h2>
+                    <p>Trolling adalah metode memancing yang dilakukan dengan menarik pancing yang terpasang di perahu yang bergerak, baik di air laut maupun di danau. Metode ini cocok untuk menangkap ikan besar, seperti ikan tuna atau marlin. Pancing akan bergerak dengan laju perahu, dan pemancing harus siap untuk menarik kail jika ikan menggigit.
+                    </p>
+                    
+                </div>
+                <div class="item">
+                    <h2>Memancing dengan Jala (Net Fishing)</h2>
+                    <p>Metode ini menggunakan jala untuk menangkap ikan secara massal. Jala dapat dilemparkan ke dalam air atau dipasang di sepanjang garis pantai atau sungai. Jenis jala yang digunakan bisa bervariasi, mulai dari jala angkat hingga jala jaring halus untuk menangkap ikan kecil.</p>
+                    
+                </div>
+            </div>
+        </div>
+    <!--AKHIR CODE APA YANG DIDAPAT-->
+</body>
+</html>

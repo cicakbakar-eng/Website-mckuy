@@ -5,6 +5,7 @@
     background-color: #0567a8;
     color: white;
     padding: 10px 0;
+    z-index: 2;
 }
 
 .container {
@@ -55,10 +56,12 @@
 
 
 .expect-container {
-    margin-top: 250px;
+    margin-top: 150px;
     text-align: center;
     padding: 20px;
     float: center;
+    z-index: 2;
+    position: relative;
     
 }
 
@@ -80,7 +83,13 @@
     border-radius: 10px; 
     width: 30%; 
 }
-
+.item2 {
+    background-color: #0056b3; 
+    color: white;
+    padding: 15px;
+    border-radius: 10px; 
+    width: 100%; 
+}
 .item h2 {
     font-size: 1.5em; 
 }

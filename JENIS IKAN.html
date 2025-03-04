@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylehomepage.css">
+    <link rel="stylesheet" href="stylelandingpage.css">
+    <link rel="stylesheet" href="stylepagemetode.css">
+    <title>MancingKuy.com</title>
+</head>
+<body>
+    <!--AWAL CODE NAVBAR-->
+    <nav class="navbar">
+        <div class="container">
+            <a href="HOMEPAGE.html" class="navbar-brand">MancingKuy</a>
+            <form class="search-form" role="search" action="https://www.google.com/search" method="get">
+                <input class="search-input" type="search" placeholder="Seputar Mancing" aria-label="Search" name="q">
+                <button class="search-button" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    
+    <script>
+        document.getElementById('mancingSearchForm').addEventListener('submit', function(event) {
+            var keyword = document.getElementById('mancingSearchInput').value.toLowerCase(); // Convert to lowercase
+        
+            if (keyword.includes('mancing')) {
+                // If the keyword contains "mancing", continue with the search
+                this.action = "https://www.google.com/search?q=" + encodeURIComponent(keyword);
+            } else {
+                // If the keyword does not contain "mancing", prevent submission
+                event.preventDefault(); 
+                alert('Pencarian harus mengandung kata "mancing".');
+            }
+        });
+        </script>
+
+    <!--AKHIR CODE NAVBAR-->
+
+    <!--AWAL CODE APA YANG DIDAPAT-->
+        <div class="expect-container">
+            <h1 class="expect-header">PERLUKAH KITA MEMAHAMI KARAKTERISTIK, POLA MAKAN, DAN HABITAT?</h1>
+            <h2 class="expect-header">Tentu Saja</h2>
+            <p>Mengerti lokasi dimana kita akan memancing juga menjadi penentu bagaimana hasil tangkapan kita</p>
+            <div class="expect-items">
+                <div class="item">
+                    <h2>Karakteristik Ikan yang Berbeda</h2>
+                    <p>Setiap jenis ikan memiliki karakteristik yang berbeda, seperti ukuran, bentuk tubuh, dan jenis makanan yang mereka konsumsi. Misalnya, ikan predator seperti ikan bass atau ikan tuna lebih cenderung memakan umpan hidup, sementara ikan yang lebih kecil seperti ikan lele atau ikan mas mungkin lebih tertarik pada umpan buatan. Memahami karakteristik ini membantu pemancing memilih teknik dan alat yang tepat untuk menarik perhatian ikan tertentu.</p>
+                </div>
+                <div class="item">
+                    <h2>Perilaku Makan Ikan</h2>
+                    <p>Setiap jenis ikan memiliki pola makan yang berbeda tergantung pada waktu dan musim. Ada ikan yang lebih aktif berburu di pagi atau sore hari, sementara beberapa spesies mungkin lebih aktif pada malam hari. Dengan mengetahui waktu aktif makan ikan, pemancing bisa merencanakan waktu yang tepat untuk memancing agar peluang menangkap ikan lebih tinggi.</p>
+                </div>
+                <div class="item">
+                    <h2>Habitat dan Lingkungan Ikan</h2>
+                    <p>Ikan hidup di berbagai habitat, seperti sungai, danau, laut, atau bahkan rawa-rawa. Setiap jenis ikan memiliki preferensi lingkungan tertentu, seperti kedalaman air, suhu, dan jenis dasar perairan. Misalnya, ikan-ikan air dingin seperti trout biasanya ditemukan di perairan yang lebih dingin, sementara ikan tropis lebih suka perairan hangat. Mengetahui di mana jenis ikan tertentu biasanya berada akan membantu pemancing memilih lokasi yang tepat untuk memancing.</p>
+                    
+                </div>
+            </div>
+        </div>
+    <!--AKHIR CODE APA YANG DIDAPAT-->
+</body>
+</html>
