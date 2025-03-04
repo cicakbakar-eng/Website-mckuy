@@ -29,7 +29,7 @@
                 this.action = "https://www.google.com/search?q=" + encodeURIComponent(keyword);
             } else {
                 // If the keyword does not contain "mancing", prevent submission
-                event.preventDefault(); // Prevent the form from being submitted
+                event.preventDefault(); 
                 alert('Pencarian harus mengandung kata "mancing".');
             }
         });
